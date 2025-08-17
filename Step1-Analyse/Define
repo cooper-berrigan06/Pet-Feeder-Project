@@ -1,0 +1,4 @@
+The automatic pet feeder should dispense food at scheduled times, measure if the food was eaten 10 minutes prior to it being dispensed and alert staff if there are problems such as jams, empty food hoppers or uneaten meals.
+The inputs it will require are feeding schedules, a real-time clock and sensors for bowl weight. 
+The outputs should include servo driven dispensing, LED alerts and data logging.
+The assumptions are that only dry food is used and it has limited storage and memory.
