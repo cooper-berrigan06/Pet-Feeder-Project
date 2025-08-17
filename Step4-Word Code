@@ -1,0 +1,8 @@
+System checks if its feeding time
+If yes, then it tries to dispense food
+The weight sensor under bowl checks if food was dispensed 
+If no then it sends and alert 
+If yes then it waits a set amount of time 
+Until checking how much food was eaten 
+If food eaten is under set amount then it sends and alert and logs error
+If food eaten is above set amount then it goes on idle until it is feeding time again
