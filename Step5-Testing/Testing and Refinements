@@ -1,0 +1,20 @@
+Test A – Pets eat as expected
+Set up: Hopper has food, sensors work, target = 100g, eat time = 20 minutes
+Steps: Dispense food, confirmed food flowed, logged, wait up to 20 minutes
+Expected: 100g dispensed, >70g eaten in 20 minutes, no alert
+Test B – pet does not eat
+Set up: Hopper has food, sensors working, target = 100g, eat time 20 minutes
+Steps: Dispense, confirmed food flowed, wait 20 minutes
+Expected: 100g dispensed, <70g eaten in 20 minutes, send alert “food not eaten in set time”
+Test C – Food hopper empty
+Set up: Hopper does not have food, target = 100g
+Steps: Dispense food, confirm food flowed
+Expected: The weight sensor does not confirm food flowed, send alert “food not dispensed”
+Test D – Jam during dispense
+Set up: Hopper has food, tries to dispense food
+Steps: tries to dispense
+Expected: the weight sensor does not confirm food flowed, send alert “food not dispensed”
+System Refinements
+Add short top up feature for if dispense is to low on weight scale
+If weight unchanged after dispense try again as it may be jammed and then send alert
+Add sensor to check if hopper is empty and then add alert
